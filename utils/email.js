@@ -49,7 +49,7 @@ module.exports = class Email {
     };
     // 3) create a transport and send
     this.newTransport().sendMail(mailOptions, function(error, info) {
-      console.log(error, info);
+      console.error(error, info);
     });
   }
 
